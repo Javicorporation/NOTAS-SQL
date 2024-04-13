@@ -45,17 +45,3 @@ SELECT SUM(columna) FROM tabla
 -- Ejercicio
 -- Utilizando la tabla empleados, encuentra la suma de todos los sueldos.
 SELECT SUM(sueldo) FROM empleados;
-
-
-
--------------------------------------------------------------------------------------|
---
---
---
-
--- ***********
--- Ejercicio
---
---
---
---
