@@ -73,5 +73,9 @@ FROM (
 -- Ejercicio
 --  Se tiene la tabla goles que registra los goles logrados por cada jugador en distintos partidos.
 --  Nos piden una consulta para calcular el promedio total de goles.
-SELECT AVG(goles.GOLES) AS promedio_total_goles
-FROM goles;
+SELECT AVG(total_goles) AS promedio_goles
+FROM (
+    SELECT SUM(GOLES) AS total_goles
+    FROM goles
+    GROUP BY JUGADOR_ID
+) AS subconsulta;
